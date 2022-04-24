@@ -1,5 +1,5 @@
-image,string_count,coords
-two_buttons.png,2,"56,93,225,64"
+image,string_count,coords,color
+two_buttons.png,2,"56,93,225,64",black
 aliens.jpg,1,"45, 182"
 all_my_homies_hate.jpg,2,"290, 10, 290, 550"
 always_has_been.png,2,"200, 300, 500, 150"
