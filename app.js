@@ -13,11 +13,9 @@ let state = 1
 
 async function textOverlay(coords, strings, img_name, color) {
   const image = await Jimp.read('./meme_formats/' + img_name)
+  let font = await Jimp.loadFont(Jimp.FONT_SANS_32_BLACK)
   if (color === "white") {
-    const font = await Jimp.loadFont(FONT_SANS_32_WHITE)
-  }
-  else{
-    const font = await Jimp.loadFont(FONT_SANS_32_BLACK)
+    font = await Jimp.loadFont(Jimp.FONT_SANS_32_WHITE)
   }
   for (let i = 0; i < coords.length; i++) {
     image.print(font, coords[i][0], coords[i][1], strings[i])
@@ -82,6 +80,7 @@ client.on('message', async message => {
   }
 
   if (command === 'meme') {
+    console.log(params)
     console.log(state)
     if (state === 1) {
       state = 0
