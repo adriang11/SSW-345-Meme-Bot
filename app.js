@@ -7,7 +7,7 @@ const wait = require('util').promisify(setTimeout)
 const client = new Discord.Client()
 
 require('dotenv').config()
-require('discord-reply');
+require('discord-reply')
 
 let state = 1
 
