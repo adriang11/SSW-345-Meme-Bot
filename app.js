@@ -13,7 +13,7 @@ let state = 1
 
 async function textOverlay(coords, strings, img_name) {
   const image = await Jimp.read('./meme_formats/' + img_name)
-  const font = await Jimp.loadFont('./gDvexbrVKLfKjcadEW4Xmhwf.ttf.fnt')
+  const font = await Jimp.loadFont(Jimp.FONT_SANS_32_BLACK)
   for (let i = 0; i < coords.length; i++) {
     image.print(font, coords[i][0], coords[i][1], strings[i])
   }
@@ -82,7 +82,7 @@ client.on('message', async message => {
       const image = make_image(params)
       message.channel.send("Making meme... please wait until this meme is done to make another")
       await wait(3000)
-      message.channel.send("Your meme:", {files: ['./output.png']})
+      message.lineReply("Your meme:", {files: ['./output.png']})
       state = 1
     }
     if (state === 0) {
