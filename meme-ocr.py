@@ -27,14 +27,15 @@ for meme in meme_links[0:5]:
         print('image not download error')
     
 
-''' TODO: KERAS TEXT RECOGNITION INLINE
-
+# TODO: KERAS TEXT RECOGNITION INLINE
+'''
 images = [
-    keras_ocr.tools.read(images) for images in meme_links[0:1]
-]
+    keras_ocr.tools.read(url) for url in [
+        'https://storage.googleapis.com/gcptutorials.com/examples/keras-ocr-img-1.jpg',        
+        'https://storage.googleapis.com/gcptutorials.com/examples/keras-ocr-img-2.png'
+    ]
+  ]
 
 prediction = pipeline.recognize(images)
 
-print(prediction)
-
-'''
+print(prediction)'''
