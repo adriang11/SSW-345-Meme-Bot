@@ -8,9 +8,11 @@ const client = new Discord.Client()
 
 require('dotenv').config()
 
+let state = 1
+
 async function textOverlay(coords, strings, img_name) {
   const image = await Jimp.read('./meme_formats/' + img_name)
-  const font = await Jimp.loadFont(Jimp.FONT_SANS_32_BLACK)
+  const font = await Jimp.loadFont('./gDvexbrVKLfKjcadEW4Xmhwf.ttf.fnt')
   for (let i = 0; i < coords.length; i++) {
     image.print(font, coords[i][0], coords[i][1], strings[i])
   }
@@ -73,10 +75,18 @@ client.on('message', async message => {
   }
 
   if (command === 'meme') {
-    const image = make_image(params)
-    message.channel.send("Making meme...")
-    await wait(3000)
-    message.channel.send("Your meme:", {files: ['./output.png']});
+    console.log(state)
+    if (state === 1) {
+      state = 0
+      const image = make_image(params)
+      message.channel.send("Making meme... please wait until this meme is done to make another")
+      await wait(3000)
+      message.channel.send("Your meme:", {files: ['./output.png']})
+      state = 1
+    }
+    if (state === 0) {
+      message.channel.send("Making another meme, please wait until the current meme is finished.")
+    }
   }
 })
 
