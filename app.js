@@ -7,6 +7,7 @@ const wait = require('util').promisify(setTimeout)
 const client = new Discord.Client()
 
 require('dotenv').config()
+require('discord-reply');
 
 async function textOverlay(coords, strings, img_name) {
   const image = await Jimp.read('./meme_formats/' + img_name)
@@ -74,9 +75,9 @@ client.on('message', async message => {
 
   if (command === 'meme') {
     const image = make_image(params)
-    message.channel.send("Making meme...")
+    message.channel.send("Generating meme...")
     await wait(3000)
-    message.channel.send("Your meme:", {files: ['./output.png']});
+    message.lineReply("Your meme:", {files: ['./output.png']});
   }
 })
 
