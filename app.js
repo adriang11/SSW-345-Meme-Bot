@@ -9,9 +9,10 @@ client.once('ready', () => {
 })
 
 client.on('message', message => {
-  if (!message.content.startsWith(process.env.PREFIX) || message.author.bot) return
+  const input = message.content.trim()
+  if (!input.startsWith(process.env.PREFIX) || message.author.bot) return
 
-  const args = message.content.slice(process.env.PREFIX.length).split(/ +/)
+  const args = input.slice(process.env.PREFIX.length).split(/ +(?=("(.*?)"))/)
   const command = args.shift().toLowerCase()
   const params = args.map(clean)
 
