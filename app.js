@@ -87,7 +87,7 @@ client.on('message', async message => {
       const image = make_image(params)
       message.channel.send("Making meme... please wait until this meme is done to make another")
       await wait(3000)
-      message.channel.send("Your meme:", {files: ['./output.png']})
+      message.lineReply("Your meme:", {files: ['./output.png']})
       state = 1
     }
     if (state === 0) {
