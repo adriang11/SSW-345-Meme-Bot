@@ -1,3 +1,5 @@
+'''DEPRECATED
+
 import matplotlib.pyplot as plt
 import keras_ocr
 import csv
@@ -28,7 +30,6 @@ for meme in meme_links[0:5]:
     
 
 # TODO: KERAS TEXT RECOGNITION INLINE
-'''
 images = [
     keras_ocr.tools.read(url) for url in [
         'https://storage.googleapis.com/gcptutorials.com/examples/keras-ocr-img-1.jpg',        
