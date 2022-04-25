@@ -11,7 +11,7 @@ Story creation was completed at a sprint planning meeting held by the entire tea
 | Make architecture diagram | 2 | Avery |
 | Set up discord api integration| 3 | Adrian |
 | Make design sketches | 3 | Jordan / team | 
-| Meme command handler | 5 | William |
+| Meme command handler | 5 | William / Adrian |
 | Host project with Heroku | 5 | Adrian |
 
 ### Meeting notes
@@ -25,7 +25,8 @@ At the end of this sprint all of the above tasks were successfully completed by 
 
 | Task | Complexity | Developer |
 | ---- | ---------- | --------- |
-| Compost text on images| 6 | William |
+| Compose text on images| 5 | William |
 | Complete process documentation | 2 | Avery |
+| Image programmatic coordinate breakdown | 5 | Adrian / Jordan |
 
 TODO: fill in remaining tasks and takeaways
