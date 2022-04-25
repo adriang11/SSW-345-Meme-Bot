@@ -35,7 +35,7 @@ Final Scrum Notes
 
 At the end of this sprint all of the above tasks were successfully completed by the assigned developers.
 
-![Kanban board](./markdown_images/kanban.png)
+![Kanban board after sprint 1](./markdown_images/kanban.png)
 
 ## Sprint 2 Tasks
 
@@ -67,3 +67,5 @@ Final Scrum Notes
 ### Sprint 2 Reflection
 
 At the end of this sprint, most basic tasks involving image processing (or "meme creation" were completed). We hoped to achieve more in terms of making more consistent memes (say, text placement) but time caught up with us. Likewise, we didn't have much time to prepare the machine-learning backend to go with our frontend work. This will be an important subject in our future work on this bot, and it is now our top priority before this project's final submission.
+
+![Kanban board after sprint 2](./markdown_images/completed_kanban.png)
