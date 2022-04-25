@@ -35,7 +35,7 @@ Final Scrum Notes
 
 At the end of this sprint all of the above tasks were successfully completed by the assigned developers.
 
-![Kanban board](markdown_images\kanban.png)
+![Kanban board](./markdown_images/kanban.png)
 
 ## Sprint 2 Tasks
 
