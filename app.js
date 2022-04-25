@@ -71,7 +71,14 @@ client.on('message', async message => {
   const input = message.content.trim()
   if (!input.startsWith(process.env.PREFIX) || message.author.bot) return
 
-  const args = input.slice(process.env.PREFIX.length).split(/ +(?=("(.*?)"))/)
+  const regex = new RegExp('"[^"]+"|[\\S]+', 'g')
+  const arguments = []
+  input.match(regex).forEach(element => {
+      if (!element) return
+      return arguments.push(element.replace(/"/g, ''))
+  })
+
+  const args = arguments 
   const command = args.shift().toLowerCase()
   const params = args.map(clean)
 
@@ -79,7 +86,7 @@ client.on('message', async message => {
     return value.replace(/^"|^'|'$|"$/g, '')
   }
 
-  if (command === 'meme') {
+  if (command === '!meme') {
     console.log(params)
     console.log(state)
     if (state === 1) {
