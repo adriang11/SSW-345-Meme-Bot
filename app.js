@@ -57,8 +57,6 @@ async function make_image(strings) {
       coords_final.push(chunk)
     }
 
-    console.log(coords_final)
-
     textOverlay(coords_final, strings, options[final].image, options[final].color)
   });
 }
@@ -68,38 +66,40 @@ client.once('ready', () => {
 })
 
 client.on('message', async message => {
-  const input = message.content.trim()
-  if (!input.startsWith(process.env.PREFIX) || message.author.bot) return
+  try {
+    const input = message.content.trim()
+    if (!input.startsWith(process.env.PREFIX) || message.author.bot) return
 
-  const regex = new RegExp('"[^"]+"|[\\S]+', 'g')
-  const arguments = []
-  input.match(regex).forEach(element => {
-      if (!element) return
-      return arguments.push(element.replace(/"/g, ''))
-  })
+    const regex = new RegExp('"[^"]+"|[\\S]+', 'g')
+    const arguments = []
+    input.match(regex).forEach(element => {
+        if (!element) return
+        return arguments.push(element.replace(/"/g, ''))
+    })
 
-  const args = arguments 
-  const command = args.shift().toLowerCase()
-  const params = args.map(clean)
+    const args = arguments 
+    const command = args.shift().toLowerCase()
+    const params = args.map(clean)
 
-  function clean(value, index, array) {
-    return value.replace(/^"|^'|'$|"$/g, '')
-  }
-
-  if (command === '!meme') {
-    console.log(params)
-    console.log(state)
-    if (state === 1) {
-      state = 0
-      const image = make_image(params)
-      message.channel.send("Making meme... please wait until this meme is done to make another")
-      await wait(3000)
-      message.lineReply("Your meme:", {files: ['./output.png']})
-      state = 1
+    function clean(value, index, array) {
+      return value.replace(/^"|^'|'$|"$/g, '')
     }
-    if (state === 0) {
-      message.channel.send("Making another meme, please wait until the current meme is finished.")
+
+    if (command === '!meme') {
+      if (state === 1) {
+        state = 0
+        const image = make_image(params)
+        message.channel.send("Creating meme... please wait until this meme is done to make another.")
+        await wait(3000)
+        message.lineReply("Your meme:", {files: ['./output.png']})
+        state = 1
+      }
+      if (state === 0) {
+        message.channel.send("Creating another meme currently, please wait until the current meme is finished.")
+      }
     }
+  } catch (error) {
+    console.log(error)
   }
 })
 
