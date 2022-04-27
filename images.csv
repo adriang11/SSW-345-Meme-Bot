@@ -1,15 +1,15 @@
 image,string_count,coords,color
 two_buttons.png,2,"56,93,225,64",black
 aliens.jpg,1,"45, 182"
-all_my_homies_hate.jpg,2,"290, 10, 290, 550"
+all_my_homies_hate.jpg,2,"290, 10, 100, 550",white
 always_has_been.png,2,"200, 300, 500, 150",white
-american_copper_argument.jpg,5,"275, 300, 275, 675, 275, 1000, 275, 1400, 275, 1750"
-anakin_padme.png,2,"150, 340, 510, 340"
+american_copper_argument.jpg,5,"275, 300, 275, 675, 275, 1000, 275, 1400, 275, 1750",white
+anakin_padme.png,2,"150, 340, 510, 340",white
 batman_slaps_robin.jpg,2,"30, 20, 250, 20"
 bernie_support.jpg,1,"350, 650"
 best_i_can_do.jpg,1,"250, 75"
 bike_fall.jpg,3,"300, 150, 75, 350, 75, 580"
-blue_button.jpg,1,"100, 250"
+blue_button.jpg,1,"100, 250",white
 boardroom.jpg,4,"175, 10, 25, 240, 170, 250, 310, 260"
 both_buttons.jpg,2,"70, 120, 275, 75"
 brain_vs_sleep.jpg,3,"40, 20, 170, 20, 20, 170"
@@ -18,30 +18,30 @@ bugs_communist.png,1,"300, 50"
 buzz_everywhere.jpg,1,"1400, 200"
 cardboard_sign.jpg,1,"300, 100"
 change_my_mind.jpg,1,"250, 240"
-chris_rock.png,2,"100, 100, 400, 80"
+chris_rock.png,2,"100, 100, 300, 80",white
 clown.jpg,4,"50, 50, 50, 250, 50, 450, 50, 650"
 conspiracy.jpg,1,"700, 250"
 cute_cat.jpg,1,"50, 150"
 did_you_mean.jpg,2,"175, 85, 325, 235"
-disaster_girl.jpg,2,"100, 85, 300, 180"
+disaster_girl.jpg,2,"80, 85, 300, 180",white
 distracted_boyfriend.jpg,3,"280, 550, 450, 180, 850, 200"
 doge.jpg,1,"200, 100"
 domino_effect.jpg,2,"520, 300, 120, 100"
-drake_point.jpg,2,"700, 100, 700, 700"
+drake_point.jpg,2,"680, 90, 680, 90"
 draw_25.jpg,1,"80, 170"
-drift_exit.jpg,2,"200, 170, 420, 170"
+drifting_exit.jpg,2,"200, 170, 420, 170",white
 drowning_with_skeleton.jpg,3,"500, 200, 300, 450, 150, 800"
 elmo_cocaine.jpg,1,"170, 95"
-epic_handshake.jpg,2,"100, 100, 500, 100"
+epic_handshake.jpg,2,"100, 100, 500, 100",white
 everyone_gets_a.jpg,1,"250, 50"
 evil_kermit.jpg,1,"300, 20"
 expanding_brain.jpg,4,"30, 30, 30, 330, 30, 630, 30, 930"
 fan_vs_enjoyer.png,2,"30, 30, 360, 30"
 feelings_of_power.jpg,1,"150, 720"
 finding_neverland.jpg,1,"150, 40"
-flex_tape.jpg,2,"350, 100, 240, 380"
+flex_tape.png,2,"350, 100, 240, 380"
 getting_paid.png,1,"175, 300"
-gidorah.jpg,3,"70, 80, 280, 40, 490, 100"
+gidorah.jpg,3,"70, 80, 280, 40, 490, 100",white
 girl_vs_terminator.jpg,2,"170, 90, 210, 275"
 goosebumps.jpg,1,"120, 110",white
 grus_plan.jpg,4,"200, 90, 560, 90, 210, 300, 560, 300"
@@ -55,15 +55,15 @@ interesting_man.jpg,2,"40, 26, 40, 613",white
 internet_grandma.jpg,2,"20, 20, 20, 360"
 kermit_lipton.jpg,2,"30, 30, 30, 470"
 laughing_leo.png,1,"30, 365"
-leo_cup.jpg,2,"20, 20, 20, 300"
+leo_cup.jpg,2,"20, 20, 20, 300",white
 marked_safe.jpg,1,"30, 347"
 mcmahon_reaction.jpg,4,"10, 10, 10, 230, 10, 470, 10, 670"
 monkey_puppet.jpg,2,"30, 30, 640, 110"
 no_btches.png,1,"50, 15",white
-office_congratulations.jpg,2,"30, 150, 320, 240"
-one_does_not_simply.jpg,2,"25, 25, 25, 350"
+office_congratulations.jpg,2,"30, 150, 320, 240",white
+one_does_not_simply.jpg,2,"25, 25, 25, 250",white
 panik_kalm_panik.png,3,"25, 25, 25, 325, 25, 620"
-peace_over_grave.png,2,"79, 168, 281, 302"
+peace_over_grave.png,2,"79, 168, 270, 302",white
 pigeon.jpg,3,"200, 250, 1250, 100, 600, 1300"
 rock_driving.jpg,2,"327, 40, 339, 273"
 roll_safe.jpg,1,"65, 313",white
@@ -72,8 +72,8 @@ same_picture.jpg,2,"187, 161, 838, 251"
 scientist.jpg,1,"20, 438"
 screaming_seagull.jpg,4,"50, 50, 50, 804, 50, 1504, 50, 2625",white
 scroll_of_truth.jpg,1,"253, 819"
-skeptical.jpg,2,"15, 15, 15, 310",white
-soldier_protecting_kid.jpg,2,"141, 191, 294, 280"
+skeptical.jpg,2,"15, 15, 15, 340",white
+soldier_protecting_kid.jpg,2,"300, 90, 250, 280"
 soy_vs_chad.jpg,2,"20, 776, 840, 776"
 spiderman_pointing.jpg,2,"117, 142, 520, 197"
 spongebob_burns_paper.jpg,1,"55, 153"
@@ -84,9 +84,9 @@ success.jpg,1,"200, 400",white
 surprised_guy.jpg,2,"50, 50, 50, 410"
 surprised_pikachu.jpg,1,"50, 50"
 they_dont_know.png,1,"250, 100"
-thinking_husband.jpg,2,"150, 100, 1400, 100"
+thinking_husband.jpg,2,"150, 100, 1200, 80"
 this_is_fine.jpg,1,"140, 60"
-trade_offer.jpg,2,"75, 200, 375, 200"
+trade_offer.jpg,2,"75, 200, 350, 200",white
 train_vs_bus.png,2,"375, 100, 450, 600"
 tuxedo_pooh.png,2,"380, 50, 380, 320"
 two_buttons.jpg,2,"80,120,300, 75"
@@ -98,5 +98,5 @@ we_are_not_the_same.png,1,"250, 700",white
 where_banana.png,1,"700, 300",white
 who_killed.jpg,3,"250, 400, 800, 400, 500, 900",white
 woman_vs_cat.jpg,2,"10, 10, 350, 10"
-yellow_vs_pink.jpg,3,"100, 100, 550, 200, 50, 800"
+yellow_vs_pink.jpg,3,"100, 90, 500, 200, 50, 800"
 yoda.jpg,1,"150, 500",white
